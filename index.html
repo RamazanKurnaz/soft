@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kare Soft</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+      <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+      <div id="img_here"></div>
+    </div>
+    <header
+      id="header"
+      class="animated slideInDown"
+      style="animation-delay: 1.8s"
+    >
+      <table>
+        <tr>
+          <td id="logo">Kare Soft</td>
+          <td id="navigation">
+            <a href="#work">İşlerimiz</a>
+            <a href="#bio">Hakkımızda</a>
+            <a href="">blog</a>
+            <a href="#contact">İletişim</a>
+          </td>
+        </tr>
+      </table>
+    </header>
+    <table id="top_part">
+      <tr>
+        <td id="about" class="animated slideInLeft" style="animation-delay: 2s">
+          <h1>Depo ve satış kontrol yazılımlarımız ile işletmenizi büyütün</h1>
+          <!-- <button class="btn_one">Hire Me</button><br /> -->
+          <table>
+            <tr>
+              <td class="animated zoomIn" style="animation-delay: 2.2s">
+                <a class="social"><i class="fab fa-facebook"></i></a>
+              </td>
+              <td class="animated zoomIn" style="animation-delay: 2.4s">
+                <a class="social"><i class="fab fa-twitter"></i></a>
+              </td>
+              <td class="animated zoomIn" style="animation-delay: 2.6s">
+                <a class="social"><i class="fab fa-instagram"></i></a>
+              </td>
+              <td class="animated zoomIn" style="animation-delay: 2.8s">
+                <a class="social"><i class="fab fa-dribbble"></i></a>
+              </td>
+              <td class="animated zoomIn" style="animation-delay: 3s">
+                <a class="social"><i class="fab fa-medium"></i></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td
+          id="rightImage"
+          
+          class="animated jackInTheBox"
+          style="animation-delay: 2.2s"
+        ></td>
+      </tr>
+    </table>
+    <div id="work">
+      <h1>Çalışmalarımız</h1>
+      <div id="photos">
+        <p id="lor">
+          <b
+            >Stok yönetimi ile stokta hangi ürünün ne hızla alındığını ve stokta
+            ki ürün sayıları analiz ediliyor.</b
+          >
+        </p>
+        <img
+          onclick="magnify($(this).attr('src'))"
+          src="https://www.soluto.com.tr/wp-content/uploads/2022/09/stok_yonetimi_programi_nedir.png"
+        />
+        <p id="lor">
+          <b
+            >Depo yönetimi ile ürünlerib girişi hızlıca tamamlanıp yeni gelen
+            ürünlere yer açılıyor. Stok yapılmıyor böylece stok maliyetinden
+            kazanılmış olunuyor.</b
+          >
+        </p>
+        <img
+          onclick="magnify($(this).attr('src'))"
+          src="https://iworkbetter.com/wp-content/uploads/2019/10/stok-sevkiyat_laptop-1.png"
+        />
+        <img
+          onclick="magnify($(this).attr('src'))"
+          src="https://www.kumsalajans.com/storage/media/1107/custom-inventory-management-app-with-kizeo-forms-01.jpg"
+        />
+        <img
+          onclick="magnify($(this).attr('src'))"
+          src="https://www.cellsmartpos.com/wp-content/uploads/2017/03/inventorymanagement_hero3x.png"
+        />
+        <!-- <img
+          onclick="magnify($(this).attr('src'))"
+          src="https://images.unsplash.com/photo-1547149666-769b42053e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80"
+        />
+        <img
+          onclick="magnify($(this).attr('src'))"
+          src="https://images.unsplash.com/photo-1547950515-e652d0f50b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        />
+        <img
+          onclick="magnify($(this).attr('src'))"
+          src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80"
+        /> -->
+      </div>
+    </div>
+    <div id="bio">
+      <h1>Hakkımızda</h1>
+      <p>
+        Kare Soft yazılım firmamızı kurduğumuzda işletmelerin sorunlarını
+        çözerek işletmeler açısından yüksek karlılık ve büyüme hedeflerini
+        gerçekleştirmek için istenilecek veri setlerini hazır kurarak
+        işletmelere yüksek karlılık sağladık.
+      </p>
+      <p>
+        Sizde firmanızı daha hızlı büyütmek, deponuzda stok maliyetleri
+        azaltmak, kolay satış ve stok kontrol yaparak işletmeniz için
+        hesaplanabilir büyüme ve talep tahminleri yapabilmek için başvurun.
+      </p>
+    </div>
+    <div id="contact">
+      <h1>İletişim</h1>
+      <table>
+        <tr>
+          <td>
+            <div id="inner_div">
+              <table id="inner_table">
+                <tr>
+                  <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-at"></i> &nbsp; iletisimbiz@hotmail.com
+                  </td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div id="address">
+                      Düzce/merkez<br />
+                      finduk mahallesi<br />
+                      kestanebalı sokak
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="social"><i class="fab fa-facebook"></i></a>
+                    <a class="social"><i class="fab fa-twitter"></i></a>
+                    <a class="social"><i class="fab fa-instagram"></i></a>
+                    <a class="social"><i class="fab fa-dribbble"></i></a>
+                    <a class="social"><i class="fab fa-medium"></i></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>
+            <form>
+              <input type="text" placeholder="isim" required />
+              <input type="email" placeholder="email" required /><br />
+              <textarea placeholder="mesajınız" required rows="5"></textarea
+              ><br />
+              <button class="btn_one">gönder</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
